@@ -1,0 +1,77 @@
+@media (max-width: 414px) {
+    .bs-card {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+    }
+    .title {
+        margin-top: 24px;
+    }
+    .title .name {
+        font-size: 20px;
+    }
+    .title .caption {
+        font-size: 14px;
+    }
+    .row {
+        margin-top: 16px;
+        width: 100%;
+    }
+    .icon_card .name {
+        font-size: 12px;
+    }
+}
+@media (min-width: 414px) and (max-width: 768px) {
+    .bs-card {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: fit-content;
+    }
+    .title {
+        margin-top: 24px;
+    }
+    .title .name {
+        font-size: 20px;
+    }
+    .title .caption {
+        font-size: 14px;
+    }
+    .row {
+        margin-top: 16px;
+        width: 288px;
+    }
+    .icon_card .name {
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) {
+    .bs-card {
+        padding-left: 64px;
+        padding-right: 64px;
+        width: fit-content;
+    }
+    .title {
+        margin-top: 32px;
+    }
+    .title .name {
+        font-size: 24px;
+    }
+    .title .caption {
+        font-size: 16px;
+    }
+    .row {
+        margin-top: 24px;
+        width: 288px;
+    }
+    .icon_card .name {
+        font-size: 13px;
+    }
+}
+@media (hover: hover) {
+    .icon_card:hover {
+        background-color: #ffffff75;
+    }
+    .item_card:hover {
+        background-color: #64646410;
+    }
+}

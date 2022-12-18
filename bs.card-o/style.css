@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    font-family: "Local Font";
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Local Font";
+    src: url(/Fonts/Inter-VariableFont.ttf);
+}
+body {
+    position: relative;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+.container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-color: #f2e9ff;
+    background-image: url(/Images/background/bg.webp);
+    -moz-background-size:cover; 
+    -o-background-size:cover; 
+    -webkit-background-size:cover; 
+    -khtml-background-size:cover; 
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    top: -128px;
+    margin: 0px auto -128px;
+    background-color: #f2e9ff;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 0px 16px #64646425;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.logo img {
+    content: url(/Images/logo/picture.webp);
+    border-style: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+.bs-card {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 64px;
+    margin: 96px 20px;
+    background-color: #ffffffab;
+    -webkit-backdrop-filter: blur(64px);
+    -moz-backdrop-filter: blur(64px);
+    -ms-backdrop-filter: blur(64px);
+    backdrop-filter: blur(64px);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 24px;
+    box-shadow: 0px 0px 64px #64646420;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+}
+.title .name {
+    font-weight: 500;
+    font-size: 24px;
+    color: #212121;
+    text-align: center;
+}
+.title .caption {
+    color: #21212175;
+    margin-top: 4px;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+.row {
+    margin-top: 32px;
+    width: 288px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.icon_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 12px;
+    padding: 8px;
+    flex-grow: 1;
+}
+.icon_card:hover {
+    background-color: #ffffff75;
+}
+.icon_card:active {
+    background-color: #ffffff75;
+}
+.icon_card .icon {
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    border-radius: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.icon_card.one .icon {
+    background-image: url(/Images/social/behance.png);
+    box-shadow: inset -4px 8px 16px rgba(64, 175, 255, 0.583);
+}
+.icon_card.two .icon {
+    background-image: url(/Images/social/telegram.png);
+    box-shadow: inset 4px -8px 32px rgba(43, 137, 180, 0.483);
+}
+.icon_card.three .icon {
+    background-image: url(/Images/social/github.png);
+    box-shadow: inset -4px 8px 32px #ffffff75;
+}
+.icon_card .name {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #21212175;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.column {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.item_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    overflow: hidden;
+    border: solid 1px #64646415;
+    border-radius: 12px;
+    gap: 16px;
+    transition: all 0.2s ease-in-out;
+}
+.item_card:hover {
+    background-color: #64646410;
+}
+.item_card:active {
+    background-color: #64646410;
+}
+.item_card .icon {
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-repeat: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.item_card.one .icon {
+    background-image: url(/Images/emoji/gamepad.png);
+
+}
+.item_card.two .icon {
+    background-image: url(/Images/emoji/naruto.png);
+}
+.item_card .name {
+    font-weight: 300;
+    font-size: 14px;
+    color: #212121;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
